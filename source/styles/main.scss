@@ -1,0 +1,18 @@
+@charset "UTF-8";
+
+@import "../../node_modules/font-awesome/scss/font-awesome";
+@import "../../node_modules/normalize.scss/normalize";
+@import "../../node_modules/reset.scss/reset";
+
+//global
+@import "global/fonts";
+@import "global/vars";
+@import "global/variables";
+@import "global/sprite";
+@import "global/mixins";
+@import "global/base";
+@import "global/common";
+
+//main
+@import "sections/test-pass";
+@import "sections/quiz";
