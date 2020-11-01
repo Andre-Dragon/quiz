@@ -1,5 +1,5 @@
 {
-  "name": "kwiz",
+  "name": "quiz",
   "version": "1.0.0",
   "description": "- Если вы видите версию, например, v6.13.4 тогда все ок",
   "main": "index.js",

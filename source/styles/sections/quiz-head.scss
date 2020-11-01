@@ -1,0 +1,21 @@
+$color-title:#595354;
+
+.quiz__head {
+  padding: 41px 0 34px 43px;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid $second;
+}
+
+.quiz__head--logo {
+  display: block;
+  width: 87px;
+}
+
+.quiz__head--hint {
+  font-weight: 700;
+  font-size: 1.125rem;
+  line-height: 25px;
+  color: $color-title;
+  margin-left: 78px;
+}

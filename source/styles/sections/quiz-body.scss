@@ -1,0 +1,22 @@
+$form-title-color: #595354;
+
+.quiz__body {
+  padding: 60px 0 47px 64px;
+}
+
+.form__fieldset {
+  padding: 0;
+}
+
+.form__wrap {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.form__title {
+  font-weight: bold;
+  font-size: 1.25rem;
+  line-height: 27px;
+  color: $form-title-color;
+  margin-bottom: 30px;
+}

@@ -1,0 +1,40 @@
+$shadow-form: rgba(0, 0, 0, .25);
+
+.form__label--radio {
+  margin-right: 42px;
+  cursor: pointer;
+  border-radius: 5px;
+  max-width: 240px;
+  box-shadow: 0 -2px 10px $shadow-form;
+}
+
+.form__label--radio:last-child {
+  margin-right: 0;
+}
+
+.form__label--radio.active-radio {
+  box-shadow: 0 4px 17px $second;
+}
+
+.form__radio {
+  display: none;
+}
+
+.form__image {
+  width: 100%;
+  height: 247px;
+  overflow: hidden;
+}
+
+.form__answer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 1.125rem;
+  line-height: 25px;
+  text-align: center;
+  width: 100%;
+  height: 49px;
+  color: $form-title-color;
+}
