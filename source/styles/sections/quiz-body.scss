@@ -20,3 +20,35 @@ $form-title-color: #595354;
   color: $form-title-color;
   margin-bottom: 30px;
 }
+
+.form__button--indent {
+  display: flex;
+  align-items: center;
+  margin-top: 50px;
+  margin-left: auto;
+}
+
+.form-button__btn-next {
+  max-width: 171px;
+  display: block;
+  margin-right: 375px;
+  margin-left: auto;
+  text-align: left;
+  padding-left: 35px;
+  position: relative;
+}
+
+.form-button__btn-next:after {
+  content: '';
+  position: absolute;
+  top: 19px;
+  right: 30px;
+  background: url(../images/next.png) no-repeat;
+  width: 35px;
+  height: 8px;
+}
+
+.form__fieldset:first-child .form-button__btn-next {
+  margin-left: auto;
+}
+
