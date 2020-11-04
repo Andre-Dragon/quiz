@@ -1,0 +1,29 @@
+.quiz__form--block
+
+  .quiz__form--group
+    label.quiz__form--label(for="quiz-name") Как к Вам обращаться?
+    input.input.quiz__form--input(type="text" name="user_name")#quiz-name
+
+  .quiz__form--group
+    label.quiz__form--label(for="quiz-phone") Номер телефона*
+    input.input.quiz__form--input(type="tel" name='user_phone' maxlength="17")#quiz-phone
+
+  .quiz__form--group
+    label.quiz__form--label(for="quiz-imail") Email
+    input.input.quiz__form--input(type="email" name='user_email')#quiz-email
+
+  .quiz__form--group
+    label.quiz__form--label(for="quiz-call") Способ связи
+    select#quiz-call.quiz__form--select(name="user_call")
+
+      option(value="Позвонить") Позвонить
+      option(value="Viber") Viber
+      option(value="Whatsapp") Whatsapp
+
+  button(type="submit").button.quiz__form--button Получить результаты
+
+  .quiz__form--group
+    input#quiz-policy.quiz__form--input-policy(type="checkbox" checked)
+    label.quiz__form--label-policy(for="quiz-policy") Даю согласие на обработку персональных данных
+
+

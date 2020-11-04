@@ -5,6 +5,15 @@ $color-title:#595354;
   display: flex;
   align-items: center;
   border-bottom: 1px solid $second;
+
+  @media (max-width: 960px) {
+    padding: 30px 10px;
+    justify-content: center;
+  }
+
+  @media (max-width: 600px) {
+    padding: 15px 10px;
+  }
 }
 
 .quiz__head--logo {

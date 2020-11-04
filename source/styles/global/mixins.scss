@@ -17,8 +17,8 @@
   @content;
 
   &:hover, &:active {
-    background-color: darken($bg, 15%);
-    border-color: darken($bg, 15%);
+    background-color: darken($bg, 10%);
+    border-color: darken($bg, 10%);
   }
 }
 

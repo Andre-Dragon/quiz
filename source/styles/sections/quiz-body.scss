@@ -1,7 +1,13 @@
 $form-title-color: #595354;
+$form-checkbox-color: #e5e5e5;
+$bg-quiz-form: #F4F4F4;
 
 .quiz__body {
   padding: 60px 0 47px 64px;
+
+  @media (max-width: 960px) {
+    padding: 30px 10px;
+  }
 }
 
 .form__fieldset {
@@ -11,6 +17,16 @@ $form-title-color: #595354;
 .form__wrap {
   display: flex;
   flex-wrap: wrap;
+
+  @media (max-width: 960px) {
+    max-width: 530px;
+    margin: 0 auto;
+  }
+
+  @media (max-width: 600px) {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .form__title {
@@ -19,6 +35,73 @@ $form-title-color: #595354;
   line-height: 27px;
   color: $form-title-color;
   margin-bottom: 30px;
+
+  @media (max-width: 960px) {
+    text-align: center;
+  }
+
+  @media (max-width: 480px) {
+    line-height: 24px;
+  }
+}
+
+.form__column {
+  max-width: 409px;
+
+  @media (max-width: 960px) {
+    margin: 0 auto;
+  }
+}
+
+.form__group.active-radio {
+  border-color: $second;
+  box-shadow: 0px 2px 8px $second;
+}
+
+.form__group {
+  border: 1px solid $form-checkbox-color;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  padding: 14px 10px;
+}
+
+.form__input-radio {
+  display: none;
+}
+
+.form__label-radio {
+  display: flex;
+  align-items: center;
+  position: relative;
+  line-height: 22px;
+  color: $form-title-color;
+  cursor: pointer;
+}
+
+.form__label-radio:before {
+  content: '';
+  width: 30px;
+  height: 30px;
+  background-color: $color-main;
+  border: 1px solid  $form-title-color;
+  border-radius: 50%;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, .25);
+  margin-right: 15px;
+}
+
+.form__input-radio:checked + .form__label-radio:before {
+  border-color: $second;
+}
+
+.form__input-radio:checked + .form__label-radio:after {
+  content: '';
+  @include centerer-y();
+  left: 3px;
+  background: $second;
+  border: 4px solid $form-title-color;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
 }
 
 .form__button--indent {
@@ -26,16 +109,25 @@ $form-title-color: #595354;
   align-items: center;
   margin-top: 50px;
   margin-left: auto;
+
+  @media (max-width: 960px) {
+    justify-content: center;
+    margin: 50px auto 0;
+    max-width: 260px;
+  }
 }
 
 .form-button__btn-next {
   max-width: 171px;
   display: block;
   margin-right: 375px;
-  margin-left: auto;
   text-align: left;
   padding-left: 35px;
   position: relative;
+
+  @media (max-width: 960px) {
+    margin: 0 !important;
+  }
 }
 
 .form-button__btn-next:after {
@@ -50,5 +142,65 @@ $form-title-color: #595354;
 
 .form__fieldset:first-child .form-button__btn-next {
   margin-left: auto;
+}
+
+.form__column + .form__button--indent {
+  margin-top: 136px;
+}
+
+.form-button__btn-prev {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  border: 1px solid $second;
+  margin-right: 27px;
+  background: url(../images/prev.png) center no-repeat;
+  margin-left: auto;
+
+  @media (max-width: 960px) {
+    margin-left: 0;
+  }
+}
+
+.quiz__form--size {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 10;
+  max-width: 580px;
+  width: 100%;
+  height: 682px;
+  background-color: $bg-quiz-form;
+
+  @media (max-width: 1250px) {
+    max-width: 500px;
+  }
+
+  @media (max-width: 1170px) {
+    max-width: 360px;
+  }
+
+  @media (max-width: 960px) {
+    position: static;
+    max-width: 100%;
+    height: auto;
+    background-color: transparent;
+  }
+}
+.sending__message {
+
+  @media (max-width: 1170px) {
+    max-width: 440px;
+  }
+
+  @media (max-width: 960px) {
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 960px) {
+  .form__column + .form-button__indent {
+    margin-top: 90px;
+  }
 }
 

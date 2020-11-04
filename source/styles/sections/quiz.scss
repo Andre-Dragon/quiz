@@ -3,8 +3,13 @@
   position: fixed !important;
   z-index: 40;
   background: $color-main;
+  max-width: 1311px;
   width: 100%;
   height: 682px;
   max-height: 95%;
   overflow: auto;
+
+  @media (max-width: 600px) {
+    max-height: 100%;
+  }
 }

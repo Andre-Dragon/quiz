@@ -1,12 +1,34 @@
 .quiz__body
   form(action="#" method="post").form.quiz__body--form
-    fieldset.form__fieldsert.active(style="display: block")
+    fieldset.form__fieldset.active(style="display: none")
       .form__title Ваша квартира после ремонта?
       .form__wrap
-            include form-radio
+        include form-radio_0
       .form__button.form__button--indent
         button.button.form-button__btn-next Далее
-    fieldset.form__fieldsert(style="display: none")
-    fieldset.form__fieldsert(style="display: none")
-    fieldset.form__fieldsert(style="display: none")
-    fieldset.form__fieldsert(style="display: none")
+    fieldset.form__fieldset(style="display: none")
+      .form__title Укажите площадь Вашей квартиры/дома?
+      .form__column
+        include form-radio_1
+      .form__button.form__button--indent
+        button.button.form-button__btn-prev
+        button.button.form-button__btn-next Далее
+    fieldset.form__fieldset(style="display: none")
+      .form__title Как давно у Вас проводилась генеральная уборка?
+      .form__column
+        include form-radio_2
+      .form__button.form__button--indent
+        button.button.form-button__btn-prev
+        button.button.form-button__btn-next Далее
+    fieldset.form__fieldset(style="display: none")
+      .form__title Требуется ли мытье окон?
+      .form__wrap
+        include form-radio_3
+      .form__button.form__button--indent
+        button.button.form-button__btn-prev
+        button.button.form-button__btn-next Далее
+    fieldset.form__fieldset(style="display: block")
+      .sending__message
+        include sending-message
+      .quiz__form.quiz__form--size
+        include quiz-form
