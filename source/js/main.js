@@ -36,9 +36,17 @@ document.addEventListener('DOMContentLoaded', () => {
     },
   };
 
+  let sumPercent = Math.floor(100 / formItems.length);
+  countPercent.textContent = sumPercent + '%';
+
   btnsNext.forEach( (btn, btnIndex) => {
     btn.addEventListener('click', event => {
       event.preventDefault();
+
+      
+      sumPercent += Math.floor(100 / formItems.length);
+      countPercent.textContent = sumPercent + '%';
+      
 
       formItems[btnIndex].style.display = 'none';
       formItems[btnIndex + 1].style.display = 'block';
@@ -51,6 +59,9 @@ document.addEventListener('DOMContentLoaded', () => {
   btnsPrev.forEach( (btn, btnIndex) => {
     btn.addEventListener('click', event => {
       event.preventDefault();
+
+      sumPercent -= Math.floor(100 / formItems.length);
+      countPercent.textContent = sumPercent + '%';
 
       formItems[btnIndex + 1].style.display = 'none';
       formItems[btnIndex].style.display = 'block';
