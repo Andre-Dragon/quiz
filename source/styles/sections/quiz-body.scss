@@ -145,17 +145,21 @@ $bg-quiz-form: #F4F4F4;
 }
 
 .form__column + .form__button--indent {
-  margin-top: 136px;
+  margin-top: 126px;
 }
 
 .form-button__btn-prev {
-  width: 48px;
-  height: 48px;
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
   border: 1px solid $second;
   margin-right: 27px;
   background: url(../images/prev.png) center no-repeat;
   margin-left: auto;
+
+  &:hover, &:active {
+    background-color: transparent;
+  }
 
   @media (max-width: 960px) {
     margin-left: 0;

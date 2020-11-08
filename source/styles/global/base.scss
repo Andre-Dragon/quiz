@@ -13,7 +13,8 @@ body {
 	font-weight: normal;
 	font-size: 1rem;
 	line-height: 1.2;
-	background: $color-main;
+	background: $color-main url(../images/quiz.jpg) center no-repeat;
+	background-size: cover;
 
 	@media (max-width: 600px) {
 		font-size: 14px;

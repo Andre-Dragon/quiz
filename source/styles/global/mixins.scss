@@ -10,15 +10,15 @@
   font-weight: bold;
   text-align: center;
   display: block;
-  box-shadow: 0px 4px 18px 6px $second;
+  box-shadow: 0px 2px 6px $bg-overline;
   appearance: none;
   cursor: pointer;
   transition: all .8s;
   @content;
 
   &:hover, &:active {
-    background-color: darken($bg, 10%);
-    border-color: darken($bg, 10%);
+    background-color: darken($bg, 15%);
+    border-color: darken($bg, 15%);
   }
 }
 
