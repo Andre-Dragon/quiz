@@ -174,6 +174,25 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
   passTestButton.addEventListener('click', () => {
+    formItems.forEach((formItem, formItemIndex) => {
+      if (formItemIndex === 0) {
+        formItem.style.display = 'block';
+      } else {
+        formItem.style.display = 'none';
+      }
+
+      const inputs = formItem.querySelectorAll('input');
+      inputs.forEach(input => {
+        const parent = input.parentNode;
+        input.checked = false;
+        parent.classList.remove('active-radio');
+      });
+    });
+
+    btnsNext.forEach(btn => {
+      btn.disabled = true;
+    });
+
     overlay.classList.remove('hide');
     quiz.classList.remove('hide');
   });
